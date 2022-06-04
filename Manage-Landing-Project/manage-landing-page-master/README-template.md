@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -24,10 +24,12 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- See all testimonials in a horizontal slider
+- Receive an error message when the newsletter sign up `form` is submitted if:
+  - The `input` field is empty
+  - The email address is not formatted correctly
 
 ### Screenshot
 
