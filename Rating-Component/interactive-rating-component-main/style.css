@@ -3,9 +3,14 @@
   --white: hsl(0, 0%, 100%);
   --lightgrey: hsl(217, 12%, 63%);
   --mediumgrey: hsl(216, 12%, 54%);
-  --darkblue: hsl(213, 19%, 18%);
+  --darkblue: hsl(218, 20%, 15%);
   --verydarkblue: hsl(216, 12%, 8%);
   --attribution: hsl(228, 45%, 44%);
+  --darkbluegrey1: hsl(213, 20%, 22%);
+  --darkbluegrey2: hsl(213, 20%, 18%);
+}
+html {
+  font-size: 15px;
 }
 * {
   margin: 0;
@@ -15,12 +20,22 @@
 
 body {
   background: var(--verydarkblue);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.rateCard {
+  display: grid;
+  grid-gap: 25px;
+  height: 350px;
 }
 
 .cardbox {
   width: 350px;
-  display: grid;
-  grid-gap: 25px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
   background: var(--darkblue);
   color: var(--white);
   border-radius: 20px;
@@ -28,53 +43,116 @@ body {
 }
 
 .star {
-  width: 25px;
-  height: 25px;
-  padding: 10px;
-  background: hsl(213, 19%, 26%);
+  width: 50px;
+  height: 50px;
+  background: var(--darkbluegrey2);
   border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.text-content h1 {
+  margin-bottom: 5px;
 }
 
 .text-content p {
+  line-height: 1.5;
+  font-size: 1rem;
   color: var(--lightgrey);
 }
 
-.rating {
+.ratingOption {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.rating .rate {
+.ratingOption .rate {
+  font-size: 1.1rem;
   font-weight: 700;
-  width: 45px;
-  height: 45px;
-  padding: 10px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
-  background: hsl(213, 19%, 26%);
+  background: var(--darkbluegrey1);
   color: var(--lightgrey);
+  transition: 0.2s;
+}
+
+.ratingOption .rate.checked {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.rate:hover {
+  background: var(--lightgrey);
+  color: var(--white);
 }
 
 .btn {
-  font-size: 15px;
+  padding: 10px 0 6px;
+  font-size: 1rem;
   font-weight: 700;
   width: 100%;
-  padding: 5px 0;
-  border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   background: var(--orange);
   color: var(--white);
+  border: none;
   letter-spacing: 2px;
 }
+.btn:hover {
+  background: var(--white);
+  color: var(--orange);
+}
 
-/*
+/* ========================Thank You Card======================== */
+.thankCard {
+  display: none;
+  grid-gap: 25px;
+  place-items: center;
+  padding: 20px 0;
+}
+
+.rateText {
+  display: flex;
+  gap: 5px;
+  background: var(--darkbluegrey1);
+  color: var(--orange);
+  padding: 8px 15px 5px;
+  border-radius: 25px;
+}
+
+.thankText {
+  text-align: center;
+  padding: 0 5px;
+}
+
+.thankText h1 {
+  padding: 10px 0;
+}
+
+.thankText p {
+  color: var(--lightgrey);
+}
+
+
+/* ======================== Attribution ======================== */
 .attribution {
+  position: absolute;
+  top: 90vh;
   font-size: 11px;
   text-align: center;
+  color: var(--lightgrey);
 }
 .attribution a {
   color: var(--attribution);
 }
-*/
+
+
+/* ======================== Responsive ======================== */
+@media(max-width:480px) {
+  .cardbox {
+    width: 280px;
+  }
+}
