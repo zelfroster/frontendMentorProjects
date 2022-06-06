@@ -54,4 +54,4 @@ Users should be able to:
 ## Author
 
 - Twitter - [@zelfroster](https://www.twitter.com/zelfroster)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@zelfroster](https://www.frontendmentor.io/profile/zelfroster)
