@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot1.jpg)
+![](./screenshot/screenshot1.jpg)
 - Active and Hover State
-![](./screenshot2.jpg)
+![](./screenshot/screenshot2.jpg)
 - After Submit
-![](./screenshot3.jpg)
+![](./screenshot/screenshot3.jpg)
 
 ### Links
 
