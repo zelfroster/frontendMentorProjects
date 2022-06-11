@@ -4,96 +4,286 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <title>Blogr Landing Page</title>
+
 </head>
-<body>
-  Product
+<body class="tracking-tighter">
+  <!-- Header -->
+  <header class="flex flex-col items-center min-h-[80vh] text-white rounded-bl-[100px] bg-gradient-to-r from-veryLightRedGrad to-lightRedGrad">
+    <!-- NavBar -->
+    <nav class="container mx-auto mt-8 p-6">
+      <!-- Flex Container -->
+      <div class="relative flex justify-between">
+        <div class="flex items-center justify-center">
+          <!-- Logo -->
+          <div class="">
+            <img src="./src/images/logo.svg" alt="">
+          </div>
+          <!-- Menu Items -->
+          <div class="flex flex-col p-3 px-8 font-light baseline items-center justify-between space-x-6 md:flex md:flex-row">
+            <div class="flex flex-col items-center gap-2">
+              <div class="flex items-center gap-2">
+                <button class="font-bold hover:underline" onclick=fun(this)>Product</button>
+                <img src="./src/images/icon-arrow-light.svg" alt="">
+              </div>
+              <div class="flex hidden w-32 absolute flex-col items-start justify-start bg-white text-grayishBlue gap-2 p-6 top-12 rounded-md drop-shadow-2xl">
+                <a class="text-lg hover:font-semibold hover:text-veryDarkBlackBlue md:text-sm" href="#">Overview</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Pricing</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Marketplace</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Features</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Integrations</a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <div class="flex items-center gap-2">
+                <button class="font-bold hover:underline" onclick=fun(this)>Company</button>
+                <img src="./src/images/icon-arrow-light.svg" alt="">
+              </div>
+              <div class="flex hidden w-32 absolute flex-col items-start justify-start bg-white text-grayishBlue gap-2 p-6 top-12 rounded-md drop-shadow-2xl">
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">About</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Team</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Blog</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Careers</a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <div class="flex items-center gap-2">
+                <button class="font-bold hover:underline" onclick=fun(this)>Connect</button>
+                <img src="./src/images/icon-arrow-light.svg" alt="">
+              </div>
+              <div class="flex hidden w-32 absolute flex-col items-start justify-start bg-white text-grayishBlue gap-2 p-6 top-12 rounded-md drop-shadow-2xl">
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Contact</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">Newsletter</a>
+                <a class="text-lg hover:font-semibold md:text-sm" href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex">
+          <a href="#" class="h-11 p-3 px-8 font-bold ">Login</a>
+          <a href="#" class="h-11 p-3 px-8 font-bold baseline bg-white rounded-full text-lightRedGrad
+              duration-200 hover:bg-veryLightRed hover:text-white">Sign Up</a>
+        </div>
+        <!-- Mobile Menu -->
+      </div>
+    </nav>
+    <!-- CTA -->
+    <div id="cta">
+      <div class="flex flex-col items-center justify-center gap-10 min-h-[55vh]">
+        <div class="px-6 flex flex-col items-center justify-between gap-6 text-center tracking-tighter md:px-0">
+          <h1 class="text-4xl font-bold md:text-6xl">A modern publishing platform</h1>
+          <p class="text-xl">Grow your audience and build your online brand</p>
+        </div>
+        <div class="flex items-center justify-between">
+          <a class="p-3 px-6 h-11 mr-4 font-bold bg-white text-lightRedGrad rounded-full duration-200
+            hover:bg-veryLightRed hover:text-white" href="#">Start for Free</a>
+          <a class="p-2 px-6 h-11 font-bold bg-lightRed border-2 border-white rounded-full hover:bg-white
+            hover:text-lightRed duration-300" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+  <!-- Designed for Future -->
+  <section id="designed" class="py-24 mx-auto relative overflow-hidden md:py-44">
+    <!-- Main Flex Container -->
+    <div class="container mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-2xl text-veryDarkBlue font-bold md:text-4xl">Designed for the future</h2>
+      <div class="flex flex-col items-center justify-between min-h-[80vh] md:flex-row">
+        <!-- Mobile Compatible Image -->
+        <div id="img" class="py-12 md:hidden">
+          <img src="./src/images/illustration-editor-mobile.svg" alt="">
+        </div>
+        <!-- Designed Text Column -->
+        <div class="mx-10 flex flex-col gap-12 items-center justify-between md:mx-0 md:basis-1/2">
+          <div class="flex flex-col text-center md:text-left">
+            <h3 class="mx-2 mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal md:mx-0">Introducing an extensible editor</h3>
+            <p class="text-grayishBlue tracking-normal">
+              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="flex flex-col text-center md:text-left">
+            <h3 class="mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal">Robust content management</h3>
+            <p class="text-grayishBlue tracking-normal">
+              Flexible content management enables users to easily move through posts. Increase the usability of your blog
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            </p>
+          </div>
+        </div>
+        <!-- Desktop Compatible Image -->
+        <div id="img" class="max-w-4xl hidden md:block md:absolute md:translate-x-[35rem]">
+          <img src="./src/images/illustration-editor-desktop.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Company
+  <!-- This didn't work out -->
+  <!-- State of the Art -->
+  <!--
+  <section id="state" class="hidden">
+    <div class="h-[360px] rounded-bl-[100px] rounded-tr-[100px] bg-gradient-to-r from-veryDarkGrayBlueGrad to-veryDarkDesBlueGrad">
+      <div class="absolute -translate-y-[75vh] -translate-x-44">
+        <img src="./src/images/bg-pattern-circles.svg" alt="">
+      </div>
+      <div class="container mx-auto flex items-center justify-between ">
+        <div class="hidden -translate-y-14 md:flex">
+          <img src="./src/images/illustration-phones.svg" alt="">
+        </div>
+        <div class="flex -translate-y-16 md:hidden">
+          <img src="./src/images/illustration-phones.svg" alt="">
+          <div class="flex absolute -translate-y-[75vh] -translate-x-44 md:hidden">
+            <img src="./src/images/bg-pattern-circles.svg" alt="">
+          </div>
+        </div>
+        <div class="pl-6 flex flex-col gap-6 items-center -translate-y-16 basis-7/12">
+          <h1 class="text-2xl font-bold text-white md:text-4xl">State of the Art Infrastructure</h1>
+          <p class="pl-1 text-white tracking-normal">
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
 
-  About
-  Team
-  Blog
-  Careers
+  <!-- State -->
+  <section id="state" class="h-[100vh] overflow-hidden pt-48 md:h-[65vh] md:py-12">
+    <div class="relative overflow-hidden h-[560px] flex flex-col bg-gradient-to-b from-veryDarkGrayBlueGrad to-veryDarkDesBlueGrad
+      rounded-bl-[100px] rounded-tr-[100px] md:h-[360px] md:bg-gradient-to-r">
+      <div class="flex w-[600px] -translate-y-[30vh] -translate-x-28 md:-translate-x-44 md:-translate-y-[75vh]
+        md:w-auto">
+        <img src="./src/images/bg-pattern-circles.svg" alt="">
+      </div>
+    </div>
+    <div class="container mx-auto flex flex-col items-center justify-between -translate-y-[85vh] md:-translate-y-[50vh] md:flex-row">
+      <div class="hidden -translate-y-16 md:flex">
+        <img src="./src/images/illustration-phones.svg" alt="">
+      </div>
+      <div class="flex -translate-y-16 md:hidden">
+        <img src="./src/images/illustration-phones.svg" alt="">
+      </div>
+      <div class="mx-10 flex flex-col gap-6 items-center text-center -translate-y-16 md:pl-6 basis-7/12 md:mx-0 md:text-left">
+        <h1 class="text-4xl font-bold text-white md:text-4xl">State of the Art Infrastructure</h1>
+        <p class="pl-1 text-white tracking-normal">
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  Connect
+  <!-- Free Open Simple -->
+  <section id="fos" class="py-24 mx-auto relative overflow-hidden md:py-44">
+    <!-- Main Flex Container -->
+    <div class="container mx-auto flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-between min-h-[80vh] md:flex-row-reverse">
+        <!-- Mobile Compatible Image -->
+        <div id="img" class="py-12 md:hidden">
+          <img src="./src/images/illustration-laptop-mobile.svg" alt="">
+        </div>
+        <!-- Desktop Compatible Image -->
+        <div id="img" class="max-w-4xl hidden md:block md:absolute md:-translate-x-[35rem]">
+          <img src="./src/images/illustration-laptop-desktop.svg" alt="">
+        </div>
+        <!-- Designed Text Column -->
+        <div class="mx-10 flex flex-col gap-12 items-center justify-between md:mx-0 md:basis-1/2">
+          <div class="flex flex-col text-center md:text-left">
+            <h3 class="mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal">Free, open, simple</h3>
+            <p class="text-grayishBlue tracking-normal">
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
+          <div class="flex flex-col text-center md:text-left">
+            <h3 class="mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal">Powerful tooling</h3>
+            <p class="text-grayishBlue tracking-normal">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+  <!-- Footer -->
+  <footer class="bg-veryDarkBlackBlue rounded-tr-[100px]">
+    <div class="container mx-auto text-grayishBlue2 py-20 flex flex-col gap-12 items-center justify-center md:flex-row
+      md:items-start md:justify-between">
+      <!-- Logo -->
+      <div class="pb-6 md:p-0">
+        <img src="./src/images/logo.svg" alt="">
+      </div>
+      <!-- Footer Links -->
+      <div class="flex flex-col gap-6 items-center justify-between md:items-start md:justify-start">
+        <a class="text-xl font-bold text-white md:text-sm" href="#">Product</a>
+        <!-- Items -->
+        <div class="flex flex-col gap-2 items-center justify-between md:items-start">
+          <a class="text-lg hover:underline md:text-sm" href="#">Overview</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Pricing</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Marketplace</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Features</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Integrations</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 items-center justify-center md:items-start md:justify-start">
+        <a class="text-xl font-bold text-white md:text-sm" href="#">Company</a>
+        <!-- Items -->
+        <div class="flex flex-col gap-2 items-center justify-between md:items-start">
+          <a class="text-lg hover:underline md:text-sm" href="#">About</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Team</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Blog</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Careers</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 items-center justify-center md:items-start md:justify-start">
+        <a class="text-xl font-bold text-white md:text-sm" href="#">Connect</a>
+        <!-- Items -->
+        <div class="flex flex-col gap-2 items-center justify-between md:items-start">
+          <a class="text-lg hover:underline md:text-sm" href="#">Contact</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">Newsletter</a>
+          <a class="text-lg hover:underline md:text-sm" href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <!-- Attribution -->
+    <div class="pb-8 flex text-grayishBlue2 bg-veryDarkBlackBlue text-sm gap-2 justify-center">
+      <div class="flex">
+        <p>Challenge by <a class="text-frontendmentorLink" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      </div>
+      <div class="flex">
+        <p>Coded by <a class="text-frontendmentorLink" href="https://www.twitter.com/zelfroster" target="_blank">Sumit Kumar Soni</a>.</p>
+      </div>
+    </div>
+  </footer>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
 
-  Start for Free
-  Learn More
+  <!-- Script for Button toggle -->
+  <script>
+    var element;
+    fun = (obj) => {
+          obj.parentElement.parentElement.children[1].classList.toggle("hidden");
+          element = obj;
+        }
+    document.onclick = function(e) {
+          if (e.target.tagName !== "BUTTON") {
+                element.parentElement.parentElement.children[1].classList.add("hidden");
+              }
+        }
+  </script>
 
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

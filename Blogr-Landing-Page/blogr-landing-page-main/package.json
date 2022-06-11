@@ -1,0 +1,23 @@
+{
+  "name": "blogr-landing-page-main",
+  "version": "1.0.0",
+  "description": "A frontendmentor.io project for Landing Page of Blogr",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./src/css/style.css",
+    "watch": "tailwindcss -i ./input.css -o ./src/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zelfroster/frontendMentorProjects.git#master"
+  },
+  "author": "zelfroster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zelfroster/frontendMentorProjects/issues"
+  },
+  "homepage": "https://github.com/zelfroster/frontendMentorProjects/tree/master#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
