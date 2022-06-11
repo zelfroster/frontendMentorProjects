@@ -27,7 +27,7 @@
             <img src="./src/images/logo.svg" alt="">
           </div>
           <!-- Menu Items -->
-          <div class="flex flex-col p-3 px-8 font-light baseline items-center justify-between space-x-6 md:flex md:flex-row">
+          <div class="hidden flex-col p-3 px-8 font-light baseline items-center justify-between space-x-6 md:flex md:flex-row">
             <div class="flex flex-col items-center gap-2">
               <div class="flex items-center gap-2">
                 <button class="font-bold hover:underline" onclick=fun(this)>Product</button>
@@ -275,8 +275,8 @@
   <script>
     var element;
     fun = (obj) => {
-          obj.parentElement.parentElement.children[1].classList.toggle("hidden");
           element = obj;
+          obj.parentElement.parentElement.children[1].classList.toggle("hidden");
         }
     document.onclick = function(e) {
           if (e.target.tagName !== "BUTTON") {
