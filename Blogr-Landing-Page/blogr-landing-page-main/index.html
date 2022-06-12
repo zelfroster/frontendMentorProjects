@@ -20,48 +20,71 @@
     <!-- NavBar -->
     <nav class="container mx-auto mt-8 p-6">
       <!-- Flex Container -->
-      <div class="relative flex justify-between">
-        <div class="flex items-center justify-center">
+      <div class="flex justify-between">
+        <div class="flex items-center justify-between w-full md:justify-center md:w-auto">
           <!-- Logo -->
-          <div class="">
+          <div class="px-2">
             <img src="./src/images/logo.svg" alt="">
           </div>
           <!-- Menu Items -->
-          <div class="hidden flex-col p-3 px-8 font-light baseline items-center justify-between space-x-6 md:flex md:flex-row">
-            <div class="flex flex-col items-center gap-2">
-              <div class="flex items-center gap-2">
-                <button class="font-bold hover:underline" onclick=fun(this)>Product</button>
-                <img src="./src/images/icon-arrow-light.svg" alt="">
-              </div>
-              <div class="flex hidden w-32 absolute flex-col items-start justify-start bg-white text-grayishBlue gap-2 p-6 top-12 rounded-md drop-shadow-2xl">
-                <a class="text-lg hover:font-semibold hover:text-veryDarkBlackBlue md:text-sm" href="#">Overview</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Pricing</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Marketplace</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Features</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Integrations</a>
-              </div>
+          <div class="relative">
+            <div class="block px-1 md:hidden">
+              <button id="menu-btn" class="hamburger outline-0 focus:outline-0 border-0">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
             </div>
-            <div class="flex flex-col items-center gap-2">
-              <div class="flex items-center gap-2">
-                <button class="font-bold hover:underline" onclick=fun(this)>Company</button>
-                <img src="./src/images/icon-arrow-light.svg" alt="">
+            <div id="menu" class="hidden absolute top-12 right-0 -translate-x-[1vw] w-[85vw] bg-[rgba(255,255,255,1)] text-veryDarkBlue rounded flex-col py-8 gap-4 px-8 font-light 
+              baseline items-center justify-between shadow-[rgba(0,0,0,0.1)] shadow-lg drop-shadow-2xl md:top-auto md:right-auto md:-translate-x-0 md:w-auto md:space-x-6 md:relative md:flex 
+              md:bg-transparent md:text-white md:flex-row md:py-0 md:gap-0 md:shadow-[rgba(0,0,0,0)]">
+              <div class="relative flex flex-col items-center justify-center gap-2">
+                <div class="flex items-center gap-2">
+                  <button class="font-bold hover:underline" onclick=fun(this)>Product</button>
+                  <img class="hidden md:block" src="./src/images/icon-arrow-light.svg" alt="">
+                  <img class="block md:hidden" src="./src/images/icon-arrow-dark.svg" alt="">
+                </div>
+                <div class="flex hidden w-[70vw] relative flex-col items-center bg-[#eaeaea] text-grayishBlue gap-2 p-6 rounded-md md:drop-shadow-2xl
+                  md:absolute md:w-32 md:top-12 md:items-start md:text-grayishBlack">
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Overview</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Pricing</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Marketplace</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Features</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Integrations</a>
+                </div>
               </div>
-              <div class="flex hidden w-32 absolute flex-col items-start justify-start bg-white text-grayishBlue gap-2 p-6 top-12 rounded-md drop-shadow-2xl">
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">About</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Team</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Blog</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Careers</a>
+              <div class="relative flex flex-col items-center gap-2">
+                <div class="flex items-center gap-2">
+                  <button class="font-bold hover:underline" onclick=fun(this)>Company</button>
+                  <img class="hidden md:block" src="./src/images/icon-arrow-light.svg" alt="">
+                  <img class="block md:hidden" src="./src/images/icon-arrow-dark.svg" alt="">
+                </div>
+                <div class="flex hidden w-[70vw] relative flex-col items-center bg-[#eaeaea] text-grayishBlue gap-2 p-6 rounded-md md:drop-shadow-2xl
+                  md:absolute md:w-32 md:top-12 md:items-start md:text-grayishBlack">
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">About</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Team</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Blog</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Careers</a>
+                </div>
               </div>
-            </div>
-            <div class="flex flex-col items-center gap-2">
-              <div class="flex items-center gap-2">
-                <button class="font-bold hover:underline" onclick=fun(this)>Connect</button>
-                <img src="./src/images/icon-arrow-light.svg" alt="">
+              <div class="relative flex flex-col items-center gap-2">
+                <div class="flex items-center gap-2">
+                  <button class="font-bold hover:underline" onclick=fun(this)>Connect</button>
+                  <img class="hidden md:block" src="./src/images/icon-arrow-light.svg" alt="">
+                  <img class="block md:hidden" src="./src/images/icon-arrow-dark.svg" alt="">
+                </div>
+                <div class="flex hidden w-[70vw] relative flex-col items-center bg-[#eaeaea] text-grayishBlue gap-2 p-6 rounded-md md:drop-shadow-2xl
+                  md:absolute md:w-32 md:top-12 md:items-start md:text-grayishBlack">
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Contact</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Newsletter</a>
+                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">LinkedIn</a>
+                </div>
               </div>
-              <div class="flex hidden w-32 absolute flex-col items-start justify-start bg-white text-grayishBlue gap-2 p-6 top-12 rounded-md drop-shadow-2xl">
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Contact</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">Newsletter</a>
-                <a class="text-lg hover:font-semibold md:text-sm" href="#">LinkedIn</a>
+              <div class="block bg-grayishBlackLight h-[1px] w-full md:hidden"></div>
+              <div class="flex flex-col items-center md:hidden">
+                <a href="#" class="h-11 p-3 px-8 font-bold ">Login</a>
+                <a href="#" class="h-11 p-3 px-8 font-bold baseline bg-gradient-to-r from-veryLightRedGrad to-lightRedGrad rounded-full text-white
+                    duration-200">Sign Up</a>
               </div>
             </div>
           </div>
@@ -105,7 +128,7 @@
         <div class="mx-10 flex flex-col gap-12 items-center justify-between md:mx-0 md:basis-1/2">
           <div class="flex flex-col text-center md:text-left">
             <h3 class="mx-2 mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal md:mx-0">Introducing an extensible editor</h3>
-            <p class="text-grayishBlue tracking-normal">
+            <p class="text-grayishBlack tracking-normal">
               Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
               The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
               videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
@@ -114,7 +137,7 @@
           </div>
           <div class="flex flex-col text-center md:text-left">
             <h3 class="mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal">Robust content management</h3>
-            <p class="text-grayishBlue tracking-normal">
+            <p class="text-grayishBlack tracking-normal">
               Flexible content management enables users to easily move through posts. Increase the usability of your blog
               by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
             </p>
@@ -162,16 +185,16 @@
   <section id="state" class="h-[100vh] overflow-hidden pt-48 md:h-[65vh] md:py-12">
     <div class="relative overflow-hidden h-[560px] flex flex-col bg-gradient-to-b from-veryDarkGrayBlueGrad to-veryDarkDesBlueGrad
       rounded-bl-[100px] rounded-tr-[100px] md:h-[360px] md:bg-gradient-to-r">
-      <div class="flex w-[600px] -translate-y-[30vh] -translate-x-28 md:-translate-x-44 md:-translate-y-[75vh]
-        md:w-auto">
+      <div class="relative flex grow-1 min-w-[600px] right-28 -translate-y-[30vh] md:-translate-x-44 md:-translate-y-[75vh]
+        md:w-auto md:right-0">
         <img src="./src/images/bg-pattern-circles.svg" alt="">
       </div>
     </div>
     <div class="container mx-auto flex flex-col items-center justify-between -translate-y-[85vh] md:-translate-y-[50vh] md:flex-row">
-      <div class="hidden -translate-y-16 md:flex">
+      <div class="hidden -translate-y-16 lg:flex">
         <img src="./src/images/illustration-phones.svg" alt="">
       </div>
-      <div class="flex -translate-y-16 md:hidden">
+      <div class="flex -translate-y-16 lg:hidden">
         <img src="./src/images/illustration-phones.svg" alt="">
       </div>
       <div class="mx-10 flex flex-col gap-6 items-center text-center -translate-y-16 md:pl-6 basis-7/12 md:mx-0 md:text-left">
@@ -185,7 +208,7 @@
   </section>
 
   <!-- Free Open Simple -->
-  <section id="fos" class="py-24 mx-auto relative overflow-hidden md:py-44">
+  <section id="fos" class="pb-24 mx-auto relative overflow-hidden md:py-44">
     <!-- Main Flex Container -->
     <div class="container mx-auto flex flex-col items-center justify-center">
       <div class="flex flex-col items-center justify-between min-h-[80vh] md:flex-row-reverse">
@@ -201,7 +224,7 @@
         <div class="mx-10 flex flex-col gap-12 items-center justify-between md:mx-0 md:basis-1/2">
           <div class="flex flex-col text-center md:text-left">
             <h3 class="mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal">Free, open, simple</h3>
-            <p class="text-grayishBlue tracking-normal">
+            <p class="text-grayishBlack tracking-normal">
             Blogr is a free and open source application backed by a large community of helpful developers. It supports
             features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
             and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
@@ -209,7 +232,7 @@
           </div>
           <div class="flex flex-col text-center md:text-left">
             <h3 class="mb-5 font-bold text-2xl text-veryDarkBlue tracking-normal">Powerful tooling</h3>
-            <p class="text-grayishBlue tracking-normal">
+            <p class="text-grayishBlack tracking-normal">
             Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
             capable of producing even the most complicated sites.
             </p>
@@ -221,7 +244,7 @@
 
   <!-- Footer -->
   <footer class="bg-veryDarkBlackBlue rounded-tr-[100px]">
-    <div class="container mx-auto text-grayishBlue2 py-20 flex flex-col gap-12 items-center justify-center md:flex-row
+    <div class="container mx-auto text-grayishBlackLight py-20 flex flex-col gap-12 items-center justify-center md:flex-row
       md:items-start md:justify-between">
       <!-- Logo -->
       <div class="pb-6 md:p-0">
@@ -260,7 +283,7 @@
       </div>
     </div>
     <!-- Attribution -->
-    <div class="pb-8 flex text-grayishBlue2 bg-veryDarkBlackBlue text-sm gap-2 justify-center">
+    <div class="pb-8 flex text-grayishBlackLight bg-veryDarkBlackBlue text-sm gap-2 justify-center">
       <div class="flex">
         <p>Challenge by <a class="text-frontendmentorLink" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
       </div>
@@ -272,18 +295,7 @@
 
 
   <!-- Script for Button toggle -->
-  <script>
-    var element;
-    fun = (obj) => {
-          element = obj;
-          obj.parentElement.parentElement.children[1].classList.toggle("hidden");
-        }
-    document.onclick = function(e) {
-          if (e.target.tagName !== "BUTTON") {
-                element.parentElement.parentElement.children[1].classList.add("hidden");
-              }
-        }
-  </script>
+  <script src="./js/script.js"></script>
 
 </body>
 </html>
