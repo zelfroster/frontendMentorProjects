@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./ss/screenshot.png)
+![](./screenshot/screenshot.png)
 - GIF
-![](./ss/screenshot.gif)
+![](./screenshot/screenshot.gif)
 
 ### Links
 
