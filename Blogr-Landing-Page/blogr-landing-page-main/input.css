@@ -7,9 +7,26 @@
   }
 }
 
+#headerbg {
+  background-image: 
+    url('../images/bg-pattern-intro-desktop.svg'),
+    linear-gradient(to right,hsl(13,100%,72%),hsl(353,100%,62%));
+  background-repeat: no-repeat;
+  background-position: 29% 52%;
+}
+
+@media(max-width:560px) {
+  #headerbg {
+    background-image: 
+      url('../images/bg-pattern-intro-mobile.svg'),
+      linear-gradient(to bottom,hsl(13,100%,72%),hsl(353,100%,62%));
+    background-position: 34% 32%;
+  }
+}
+
 .hamburger {
   cursor: pointer;
-  width: 24px;
+  width: 28px;
   height: 24px;
   transition: all 2.5s;
   position: relative;
@@ -28,7 +45,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 24px;
+  width: 28px;
   height: 2px;
   background: #fff;
 }
@@ -56,4 +73,11 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.normal {
+  transform: rotate(0deg);
+}
+.reverse {
+  transform: rotate(180deg);
 }

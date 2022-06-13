@@ -26,11 +26,13 @@ Users should be able to:
 ### Screenshot
 
 ![](./ss/screenshot.png)
+- GIF
+![](./ss/screenshot.gif)
 
 ### Links
 
-- Solution URL: [Live Link](https://github.com/zelfroster/frontendMentorProjects/tree/master/Blogr-Landing-Page/blogr-landing-page-main)
-- Live Site URL: [Add live site URL here](https://zel-blogrhomepage.netlify.app)
+- Solution URL: [Github Repo](https://github.com/zelfroster/frontendMentorProjects/tree/master/Blogr-Landing-Page/blogr-landing-page-main)
+- Live Site URL: [Live Link](https://zel-blogrhomepage.netlify.app)
 
 ## My process
 
@@ -41,15 +43,17 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [TailwindCSS](https://tailwindcss.com) - CSS Framework
+- Javascript
 
 ### Continued development
 
 - Responsiveness is OK, but It just works, I will make it awesome as I develop my skills.
+- Will add more animations in future.
 
 ### Useful resources
 
 - [TailwindCSS Docs](https://tailwindcss.com/docs/installation) - Docs were the most hepful resources for TailwindCSS.
-- [Traversy Media (YT)](https://www.example.com) - This is an amazing Youtube Channel by Brad Traversy which helped me get started with TailwindCSS. I'd recommend it to anyone starting to learn this concept.
+- [Traversy Media (YT)](https://www.youtube.com/c/TraversyMedia) - This is an amazing Youtube Channel by Brad Traversy which helped me get started with TailwindCSS. I'd recommend it to anyone starting to learn this concept.
 
 ## Author
 

@@ -23,6 +23,10 @@ module.exports = {
             veryDarkGrayBlueGrad: 'hsl(237, 17%, 21%)',
             veryDarkDesBlueGrad: 'hsl(237, 23%, 32%)',
             frontendmentorLink: 'hsl(228, 45%, 44%)'
+        },
+        fontFamily: {
+            overpass: ['Overpass'],
+            ubuntu: ['Ubuntu']
         }
     },
   },

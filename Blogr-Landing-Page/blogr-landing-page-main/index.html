@@ -16,9 +16,9 @@
 </head>
 <body class="tracking-tighter">
   <!-- Header -->
-  <header class="flex flex-col items-center min-h-[80vh] text-white rounded-bl-[100px] bg-gradient-to-r from-veryLightRedGrad to-lightRedGrad">
+  <header id="headerbg" class="flex flex-col items-center min-h-[80vh] text-white rounded-bl-[100px]">
     <!-- NavBar -->
-    <nav class="container mx-auto mt-8 p-6">
+    <nav class="container tracking-normal font-semibold mx-auto mt-8 p-6 md:font-ubuntu">
       <!-- Flex Container -->
       <div class="flex justify-between">
         <div class="flex items-center justify-between w-full md:justify-center md:w-auto">
@@ -27,7 +27,7 @@
             <img src="./src/images/logo.svg" alt="">
           </div>
           <!-- Menu Items -->
-          <div class="relative">
+          <div class="relative font-semibold">
             <div class="block px-1 md:hidden">
               <button id="menu-btn" class="hamburger outline-0 focus:outline-0 border-0">
                 <span class="hamburger-top"></span>
@@ -35,66 +35,68 @@
                 <span class="hamburger-bottom"></span>
               </button>
             </div>
-            <div id="menu" class="hidden absolute top-12 right-0 -translate-x-[1vw] w-[85vw] bg-[rgba(255,255,255,1)] text-veryDarkBlue rounded flex-col py-8 gap-4 px-8 font-light 
+            <div id="menu" class="hidden font-overpass absolute top-12 right-0 -translate-x-[1vw] w-[85vw] bg-[rgba(255,255,255,1)] text-veryDarkBlue rounded flex-col py-8 gap-4 px-8 
               baseline items-center justify-between shadow-[rgba(0,0,0,0.1)] shadow-lg drop-shadow-2xl md:top-auto md:right-auto md:-translate-x-0 md:w-auto md:space-x-6 md:relative md:flex 
-              md:bg-transparent md:text-white md:flex-row md:py-0 md:gap-0 md:shadow-[rgba(0,0,0,0)]">
-              <div class="relative flex flex-col items-center justify-center gap-2">
+              md:bg-transparent md:text-white md:flex-row md:py-0 md:gap-0 md:shadow-[rgba(0,0,0,0)] md:font-ubuntu">
+              <div class="relative flex flex-col items-center gap-2">
                 <div class="flex items-center gap-2">
-                  <button class="font-bold hover:underline" onclick=fun(this)>Product</button>
+                  <button class="hover:underline text-lg font-semibold md:text-sm" onclick=fun(this)>Product</button>
                   <img class="hidden md:block" src="./src/images/icon-arrow-light.svg" alt="">
                   <img class="block md:hidden" src="./src/images/icon-arrow-dark.svg" alt="">
                 </div>
                 <div class="flex hidden w-[70vw] relative flex-col items-center bg-[#eaeaea] text-grayishBlue gap-2 p-6 rounded-md md:drop-shadow-2xl
                   md:absolute md:w-32 md:top-12 md:items-start md:text-grayishBlack">
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Overview</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Pricing</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Marketplace</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Features</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Integrations</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Overview</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Pricing</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Marketplace</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Features</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Integrations</a>
                 </div>
               </div>
               <div class="relative flex flex-col items-center gap-2">
                 <div class="flex items-center gap-2">
-                  <button class="font-bold hover:underline" onclick=fun(this)>Company</button>
+                  <button class="hover:underline text-lg font-semibold md:text-sm" onclick=fun(this)>Company</button>
                   <img class="hidden md:block" src="./src/images/icon-arrow-light.svg" alt="">
                   <img class="block md:hidden" src="./src/images/icon-arrow-dark.svg" alt="">
                 </div>
                 <div class="flex hidden w-[70vw] relative flex-col items-center bg-[#eaeaea] text-grayishBlue gap-2 p-6 rounded-md md:drop-shadow-2xl
                   md:absolute md:w-32 md:top-12 md:items-start md:text-grayishBlack">
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">About</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Team</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Blog</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Careers</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">About</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Team</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Blog</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Careers</a>
                 </div>
               </div>
               <div class="relative flex flex-col items-center gap-2">
                 <div class="flex items-center gap-2">
-                  <button class="font-bold hover:underline" onclick=fun(this)>Connect</button>
+                  <button class="hover:underline text-lg font-semibold md:text-sm" onclick=fun(this)>Connect</button>
                   <img class="hidden md:block" src="./src/images/icon-arrow-light.svg" alt="">
                   <img class="block md:hidden" src="./src/images/icon-arrow-dark.svg" alt="">
                 </div>
                 <div class="flex hidden w-[70vw] relative flex-col items-center bg-[#eaeaea] text-grayishBlue gap-2 p-6 rounded-md md:drop-shadow-2xl
                   md:absolute md:w-32 md:top-12 md:items-start md:text-grayishBlack">
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Contact</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">Newsletter</a>
-                  <a class="text-sm tracking-normal font-semibold hover:text-veryDarkBlackBlue md:tracking-tighter md:font-light md:hover:font-semibold" href="#">LinkedIn</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Contact</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">Newsletter</a>
+                  <a class="md:text-sm tracking-normal hover:text-veryDarkBlackBlue md:font-light md:hover:font-semibold" href="#">LinkedIn</a>
                 </div>
               </div>
+              <!-- Separator line in Mobile menu -->
               <div class="block bg-grayishBlackLight h-[1px] w-full md:hidden"></div>
-              <div class="flex flex-col items-center md:hidden">
-                <a href="#" class="h-11 p-3 px-8 font-bold ">Login</a>
-                <a href="#" class="h-11 p-3 px-8 font-bold baseline bg-gradient-to-r from-veryLightRedGrad to-lightRedGrad rounded-full text-white
+              <!-- Login/Signup buttons Mobile -->
+              <div class="flex flex-col text-lg items-center font-semibold md:hidden">
+                <a href="#" class="h-11 p-3 px-8 ">Login</a>
+                <a href="#" class="h-11 pt-2 px-8 mt-2 font-ubuntu baseline bg-gradient-to-r from-veryLightRedGrad to-lightRedGrad rounded-full text-white
                     duration-200">Sign Up</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="hidden md:flex">
-          <a href="#" class="h-11 p-3 px-8 font-bold ">Login</a>
-          <a href="#" class="h-11 p-3 px-8 font-bold baseline bg-white rounded-full text-lightRedGrad
+        <!-- Login/Signup buttons -->
+        <div class="hidden md:flex text-sm">
+          <a href="#" class="h-11 p-3 px-8 ">Login</a>
+          <a href="#" class="h-11 p-3 px-8 baseline bg-white rounded-full text-lightRedGrad
               duration-200 hover:bg-veryLightRed hover:text-white">Sign Up</a>
         </div>
-        <!-- Mobile Menu -->
       </div>
     </nav>
     <!-- CTA -->
@@ -104,11 +106,11 @@
           <h1 class="text-4xl font-bold md:text-6xl">A modern publishing platform</h1>
           <p class="text-xl">Grow your audience and build your online brand</p>
         </div>
-        <div class="flex items-center justify-between">
-          <a class="p-3 px-6 h-11 mr-4 font-bold bg-white text-lightRedGrad rounded-full duration-200
-            hover:bg-veryLightRed hover:text-white" href="#">Start for Free</a>
-          <a class="p-2 px-6 h-11 font-bold bg-lightRed border-2 border-white rounded-full hover:bg-white
-            hover:text-lightRed duration-300" href="#">Learn More</a>
+        <div class="flex items-center font-ubuntu justify-between">
+          <a class="p-3 px-4 h-12 mr-4 font-semibold text-md bg-white text-lightRedGrad rounded-full duration-200
+            hover:bg-veryLightRed hover:text-white md:font-ubuntu" href="#">Start for Free</a>
+          <a class="p-2 px-4 h-12 tracking-normal font-semibold bg-transparent border-2 border-white rounded-full hover:bg-white
+            hover:text-veryLightRed duration-200" href="#">Learn More</a>
         </div>
       </div>
     </div>
@@ -243,9 +245,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-veryDarkBlackBlue rounded-tr-[100px]">
-    <div class="container mx-auto text-grayishBlackLight py-20 flex flex-col gap-12 items-center justify-center md:flex-row
-      md:items-start md:justify-between">
+  <footer class="font-ubuntu tracking-normal bg-veryDarkBlackBlue rounded-tr-[100px]">
+    <div class="container mx-auto text-lg text-grayishBlackLight py-20 flex flex-col gap-12 items-center justify-center md:flex-row
+      md:items-start md:justify-between md:text-sm">
       <!-- Logo -->
       <div class="pb-6 md:p-0">
         <img src="./src/images/logo.svg" alt="">
@@ -255,40 +257,40 @@
         <a class="text-xl font-bold text-white md:text-sm" href="#">Product</a>
         <!-- Items -->
         <div class="flex flex-col gap-2 items-center justify-between md:items-start">
-          <a class="text-lg hover:underline md:text-sm" href="#">Overview</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Pricing</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Marketplace</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Features</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Integrations</a>
+          <a class="hover:underline" href="#">Overview</a>
+          <a class="hover:underline" href="#">Pricing</a>
+          <a class="hover:underline" href="#">Marketplace</a>
+          <a class="hover:underline" href="#">Features</a>
+          <a class="hover:underline" href="#">Integrations</a>
         </div>
       </div>
       <div class="flex flex-col gap-6 items-center justify-center md:items-start md:justify-start">
         <a class="text-xl font-bold text-white md:text-sm" href="#">Company</a>
         <!-- Items -->
         <div class="flex flex-col gap-2 items-center justify-between md:items-start">
-          <a class="text-lg hover:underline md:text-sm" href="#">About</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Team</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Blog</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Careers</a>
+          <a class="hover:underline" href="#">About</a>
+          <a class="hover:underline" href="#">Team</a>
+          <a class="hover:underline" href="#">Blog</a>
+          <a class="hover:underline" href="#">Careers</a>
         </div>
       </div>
       <div class="flex flex-col gap-6 items-center justify-center md:items-start md:justify-start">
         <a class="text-xl font-bold text-white md:text-sm" href="#">Connect</a>
         <!-- Items -->
         <div class="flex flex-col gap-2 items-center justify-between md:items-start">
-          <a class="text-lg hover:underline md:text-sm" href="#">Contact</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">Newsletter</a>
-          <a class="text-lg hover:underline md:text-sm" href="#">LinkedIn</a>
+          <a class="hover:underline" href="#">Contact</a>
+          <a class="hover:underline" href="#">Newsletter</a>
+          <a class="hover:underline" href="#">LinkedIn</a>
         </div>
       </div>
     </div>
     <!-- Attribution -->
-    <div class="pb-8 flex text-grayishBlackLight bg-veryDarkBlackBlue text-sm gap-2 justify-center">
+    <div class="pb-8 font-overpass flex flex-col text-grayishBlackLight bg-veryDarkBlackBlue text-sm items-center justify-center md:flex-row">
       <div class="flex">
         <p>Challenge by <a class="text-frontendmentorLink" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
       </div>
       <div class="flex">
-        <p>Coded by <a class="text-frontendmentorLink" href="https://www.twitter.com/zelfroster" target="_blank">Sumit Kumar Soni</a>.</p>
+        <p>&nbsp;Coded by <a class="text-frontendmentorLink" href="https://www.twitter.com/zelfroster" target="_blank">Sumit Kumar Soni</a>.</p>
       </div>
     </div>
   </footer>
