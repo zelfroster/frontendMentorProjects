@@ -4,25 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  
+  <title>QR code component</title>
+
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <section id="qrCard" class="min-h-screen bg-lightGray flex items-center justify-center">
+    <div class="rounded-2xl p-2 bg-white w-80 text-center flex flex-col gap-2 shadow-2xl shadow-[rgba(0,0,0,0.1)]">
+      <img src="./src/images/image-qr-code.png" class="rounded-2xl p-2" alt="">
+      <div class="p-4 flex flex-col">
+        <p class="text-2xl font-bold text-darkBlue">
+         Improve your front-end skills by building projects
+        </p>
+        <p class="py-4 text-md text-grayishBlue leading-5">
+         Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
+    <div class="absolute bottom-0 py-6 text-center text-grayishBlue flex flex-col md:flex-row">
+      <p>Challenge by <a class="text-linkColor hover:underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+      <p>&nbsp; Coded by <a class="text-linkColor hover:underline" href="https://twitter.com/zelfroster">Sumit Kumar Soni</a>.</p>
+    </div>
+  </section>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "name": "qr-code-component-main",
+  "version": "1.0.0",
+  "description": "A Frontend mentor challenge",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./src/css/style.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./src/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zelfroster/frontendMentorProjects.git#master"
+  },
+  "author": "Sumit Kumar Soni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zelfroster/frontendMentorProjects/issues"
+  },
+  "homepage": "https://github.com/zelfroster/frontendMentorProjects/tree/master#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  }
+}
