@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+#container:hover #backg {
+  opacity: 0.5;
+}
+#container:hover #view {
+  opacity: 1;
+}

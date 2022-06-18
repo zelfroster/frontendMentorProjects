@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+  
+  <title>NFT preview card component</title>
+
+</head>
+<body>
+  <section id="card" class="flex items-center min-h-screen w-auto bg-veryDarkBlueMain justify-center">
+    <div class="flex items-center justify-center rounded-[15px] bg-veryDarkBlueCard">
+      <div class="w-72 p-6 flex gap-2 flex-col">
+        <div id="container" class="flex relative cursor-pointer">
+          <img class="rounded-[6px]" src="./src/images/image-equilibrium.jpg" alt="eth image">
+          <div id="backg" class="absolute duration-300 ease-in-out rounded-[6px] bg-cyan w-full h-full opacity-0"></div>
+          <div id="view" class="duration-300 ease-in-out rounded-[6px] absolute w-full h-full flex items-center justify-center opacity-0">
+            <img src="./src/images/icon-view.svg" alt="">
+          </div>
+        </div>
+        <div class="flex flex-col justify-between gap-2 text-white">
+          <div class="flex flex-col justify-between gap-2 py-4">
+            <a class="text-lg font-semibold hover:text-cyan" href="#">Equilibrium #3429</a>
+            <p class="text-sm font-light text-softBlue py-2">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <div class="flex justify-between text-xs items-center">
+              <div class="flex gap-1">
+                <img class="h-4" src="./src/images/icon-ethereum.svg" alt="">
+                <p class="font-semibold text-cyan">0.041 ETH</p>
+              </div>
+              <div class="flex gap-1">
+                <img class="h-4" src="./src/images/icon-clock.svg" alt="">
+                <p class="text-softBlue">3 days left</p>
+              </div>
+            </div>
+          </div>
+          <span class="w-full h-[0.8px] bg-veryDarkBlueLine"></span>
+          <div class="pt-2 flex gap-4 items-center">
+            <img class="w-[30px] border-2 rounded-full" src="./src/images/image-avatar.png" alt="">
+            <div class="flex text-xs">
+              <p class="text-softBlue">Creation of &nbsp;</p>
+              <a class="hover:text-cyan" href="#">Jules Wyvern</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-6 text-xs text-softBlue flex flex-row">
+      <p>Challenge by <a class="text-link hover:underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+      <p>&nbsp; Coded by <a class="text-link hover:underline" href="https://twitter.com/zelfroster">Sumit Kumar Soni</a>.</p>
+    </div>
+  </section>
+
+</body>
+</html>
