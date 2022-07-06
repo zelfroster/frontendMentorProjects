@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <main>
+    <div id="heading">
+      <h5>ADVICE #<h5 id="advice-id">117</h5></h5>
+    </div>
+    <p id="advice-text">&quot;It is easy to sit up and take notice, what's difficult is getting up and taking action.&quot;</p>
+    <img class="divider-desktop" src="./images/pattern-divider-desktop.svg" alt="">
+    <img class="divider-mobile" src="./images/pattern-divider-mobile.svg" alt="">
+    <div id="img-btn" class="dice">
+      <img src="./images/icon-dice.svg" alt="">
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/zelfroster">Sumit Kumar Soni</a>.
+  </div>
+
+  <script>
+    const adviceResult = document.getElementById("advice-text")
+    const adviceId = document.getElementById("advice-id")
+    document.getElementById("img-btn").addEventListener("click", () => {
+          fetch('https://api.adviceslip.com/advice')
+            .then(res => res.json())
+            .then(data => {
+                  adviceResult.innerText = `"`+data.slip.advice+`"`
+                  adviceId.innerText = data.slip.id
+                })
+        })
+  </script>
+</body>
+</html>
