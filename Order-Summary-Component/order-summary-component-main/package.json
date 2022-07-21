@@ -1,0 +1,15 @@
+{
+  "name": "order-summary-component-main",
+  "version": "1.0.0",
+  "description": "Challenge project",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./src/style.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./src/style.css --watch"
+  },
+  "author": "Sumit",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}

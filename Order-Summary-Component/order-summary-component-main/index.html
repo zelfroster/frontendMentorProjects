@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+</head>
+<body>
+  <main class="min-h-screen grid place-items-center w-full bg-paleBlue">
+    <img class="hidden w-full top-0 z-0 md:absolute" src="./src/images/pattern-background-desktop.svg" alt="">
+    <img class="absolute w-full top-0 z-0 md:hidden" src="./src/images/pattern-background-mobile.svg" alt="">
+    <div class="w-[360px] z-10 flex items-center justify-center flex-col bg-veryPaleBlue rounded-[20px] shadow-2xl shadow-indigo-500/30 md:w-[450px]">
+      <img src="./src/images/illustration-hero.svg" alt="" class="rounded-t-[20px]">
+      <div class="flex flex-col items-center justify-center gap-8 px-6 py-10 md:px-12 md:py-12">
+        <div class="flex items-center justify-center flex-col gap-4">
+
+          <h2 class="text-2xl text-darkBlue font-black md:text-3xl">Order Summary</h2>
+          <p class="px-6 text-desaturatedBlue text-md text-center md:px-4">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+          <div class="flex items-center justify-between gap-4 p-6 bg-paleBlue/30 w-full rounded-xl">
+            <div class="flex items-center justify-center rounded-full">
+              <img class="w-16" src="./src/images/icon-music.svg" alt="">
+            </div>
+            <div class="flex items-center justify-between w-full">
+              <div class="flex flex-col items-center justify-start">
+                <p class="text-md text-darkBlue font-bold">Annual Plan</p>
+                <p class="text-md text-desaturatedBlue">$59.99/year</p>
+              </div>
+              <a class="text-brightBlue font-bold text-sm underline underline-offset-1 hover:text-brightBlue/70 hover:no-underline" href="#">Change</a>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="w-full rounded-xl py-4 bg-brightBlue text-white font-bold shadow-xl shadow-indigo-500/20 hover:bg-brightBlue/70">Proceed to Payment</button>
+        <a class="text-desaturatedBlue font-bold hover:text-darkBlue" href="#">Cancel Order</a>
+      </div>
+    </div>
+  </main>
+
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+</body>
+</html>
